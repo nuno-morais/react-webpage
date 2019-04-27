@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/css/uikit.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.4/js/uikit-icons.min.js"></script>
+
+    <title>Nuno Morais</title>
+    <noscript>
+      <style>
+        #root {
+          display: none;
+        }
+      </style>
+    </noscript>
+    <style>
+      .nm--header {
+        background: radial-gradient(#17717d 10%, #114e58 181%);
+        height: 100%;
+        min-height: 100vh;
+      }
+      .nm--loading_container {
+        text-align: center;
+        width: 50%;
+      }
+      .nm--loading svg {
+        color: #aaaaaa;
+      }
+      .nm--header .uk-h5 {
+        color: #aaaaaa;
+      }
+      .nm--header .uk-link:hover,
+      .nm--header a:hover {
+        color: #ffffff;
+      }
+      .nm--header .uk-card-title {
+        color: #dddddd;
+      }
+      .nm--header .uk-text-meta {
+        color: #cccccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <noscript>
+      <div class="uk-section">
+        <div class="uk-position-center nm--loading_container">
+          <p>You need to enable JavaScript to run this page.</p>
+        </div>
+      </div>
+    </noscript>
+    <div id="root">
+      <section class="nm--header">
+        <div class="uk-section">
+          <div class="uk-position-center nm--loading_container">
+            <span class="nm--loading" uk-spinner="ratio: 2.0"></span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
