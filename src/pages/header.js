@@ -3,25 +3,26 @@ import React from "react";
 export function Header() {
   return (
     <div class="uk-section">
-      <div class="uk-position-center nm--loading_container">
+      <div id="test-target" class="uk-position-center nm--loading_container">
         <div class="uk-card uk-width-1-2@m uk-position-center">
-          <div class="uk-card-header">
+          <div class="uk-card-header" uk-parallax="opacity: 1,0; scale: 1,2;">
             <div class="uk-grid-small uk-flex-middle uk-grid" uk-grid="">
               <div class="uk-width-auto uk-first-column">
                 <img
                   class="uk-border-circle"
-                  width="50"
-                  height="50"
+                  width="100"
+                  height="100"
                   src="images/photo.jpg"
                   alt="Nuno Morais"
+                  uk-img
                 />
               </div>
               <div class="uk-width-expand">
-                <h3 class="uk-card-title uk-margin-remove-bottom">
+                <h1 class="uk-card-title uk-margin-remove-top uk-margin-remove-bottom">
                   Nuno Morais
-                </h3>
+                </h1>
                 <p class="uk-text-meta uk-margin-remove-top">
-                  <span>Software Engineer</span>
+                  <span>Software Engineer @ Talkdesk</span>
                 </p>
               </div>
             </div>
@@ -65,7 +66,7 @@ export function Header() {
             </a>
             &nbsp; &nbsp;
             <a
-              href="mailto:webpage@nuno-morais.eu"
+              href="mailto:contacto@nuno-morais.eu"
               target="_top"
               uk-icon="icon: mail"
               class="uk-icon"

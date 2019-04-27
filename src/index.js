@@ -4,57 +4,40 @@ import Particles from "react-particles-js";
 import { Header } from "./pages/header";
 import "./styles.css";
 
+function ParticlesCommom() {
+  return (
+    <Particles
+      style={{ width: "100%", height: "100%", position: "absolute" }}
+      params={{
+        particles: {
+          number: {
+            value: 55,
+            density: {
+              enable: true,
+              value_area: 1500
+            }
+          },
+          line_linked: {
+            enable: true,
+            opacity: 0.1
+          },
+          size: {
+            value: 1
+          }
+        }
+      }}
+    />
+  );
+}
+
 function App() {
   return (
-    <section class="nm--header">
-      <Particles
-        style={{ width: "100%", height: "100%", position: "absolute" }}
-        params={{
-          particles: {
-            number: {
-              value: 60,
-              density: {
-                enable: true,
-                value_area: 300
-              }
-            },
-            line_linked: {
-              enable: true,
-              opacity: 0.02
-            },
-            move: {
-              direction: "right",
-              speed: 0.05
-            },
-            size: {
-              value: 1
-            },
-            opacity: {
-              anim: {
-                enable: true,
-                speed: 1,
-                opacity_min: 0.05
-              }
-            }
-          },
-          interactivity: {
-            events: {
-              onclick: {
-                enable: true,
-                mode: "push"
-              }
-            },
-            modes: {
-              push: {
-                particles_nb: 1
-              }
-            }
-          },
-          retina_detect: true
-        }}
-      />
-      <Header />
-    </section>
+    <div class="uk-container uk-container-expand uk-padding-remove">
+      <section class="nm--header" uk-parallax="sepia: 100;">
+        <ParticlesCommom />
+        <Header />
+      </section>
+    </div>
   );
 }
 
